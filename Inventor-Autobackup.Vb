@@ -9,7 +9,7 @@ Public Const BackupIntervalMs As Long = 300000 ' 5 Dakika
 Public Sub TimerProc(ByVal hwnd As LongPtr, ByVal uMsg As Long, ByVal idEvent As LongPtr, ByVal dwTime As Long)
     On Error Resume Next ' Timer içinde hata olursa Inventor'ı çökertmemesi için bunu ekledik.
     Call BackupAllOpenDocs
-End Sub
+End Sub 
 
 Public Sub BackupAllOpenDocs()
     ThisApplication.StatusBarText = "Otomatik yedekleme yapılıyor, lütfen bekleyin..."
